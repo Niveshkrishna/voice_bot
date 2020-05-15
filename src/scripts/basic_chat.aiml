@@ -2,7 +2,7 @@
 <!-- basic_chat.aiml -->
 
     <category>
-        <pattern>hello *</pattern>
+        <pattern>HELLO</pattern>
         <template>
             <random>
             <li>How ARE YOU?</li>
@@ -16,6 +16,13 @@
         </random>
         </template>
     </category>
+
+    <category>
+        <pattern>CORONA</pattern>
+        <template>
+            Coronavirus disease is an infectious disease caused by a newly discovered coronavirus. I'm here to help you if you need any assistance
+        </template>
+    </category>
     
     <category>
         <pattern>WHO ARE YOU</pattern>
@@ -24,11 +31,6 @@
         </template>
     </category>
 
-    <category>
-        <pattern>Corona</pattern>
-        <template>
-            Coronavirus disease is an infectious disease caused by a newly discovered coronavirus. I'm here to help you if you need any assistance
-        </template>
-    </category>
+    
     
 </aiml>

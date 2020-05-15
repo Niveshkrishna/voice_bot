@@ -13,15 +13,15 @@ recognizer = sr.Recognizer()
 # Press CTRL-C to break this loop
 while True:
     with sr.Microphone() as source:
-        print("Say something!")
+        print("Covid-19 Bot : Say Something!!\n")
         audio = recognizer.listen(source)
         text = voice_engine.get_text_from_speech(audio, recognizer)
         if text == -1 :
             print("waiting...")
         else : 
-            text = str(text)
-            print(text)
+            text = str(text).lower().strip()
+            print("You said : {}".format(text))
             output = kernel.respond(text)
-            print(output)
+            print("Covid-19 Bot : {}\n\n".format(output))
             voice_engine.get_speech_from_text(output)
    
