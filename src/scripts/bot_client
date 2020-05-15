@@ -16,9 +16,12 @@ while True:
         print("Say something!")
         audio = recognizer.listen(source)
         text = voice_engine.get_text_from_speech(audio, recognizer)
-        text = str(text)
-        print(text)
-    output = kernel.respond(text)
-    print(output)
-    voice_engine.get_speech_from_text(output)
+        if text == -1 :
+            print("waiting...")
+        else : 
+            text = str(text)
+            print(text)
+            output = kernel.respond(text)
+            print(output)
+            voice_engine.get_speech_from_text(output)
    

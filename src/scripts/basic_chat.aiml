@@ -5,7 +5,6 @@
         <pattern>hello *</pattern>
         <template>
             <random>
-            <li>HELLO SIR</li> 
             <li>How ARE YOU?</li>
             <li>Be more specific.</li>
             <li>I did not know that.</li>
@@ -21,7 +20,14 @@
     <category>
         <pattern>WHO ARE YOU</pattern>
         <template>
-            I'm a bot, silly!
+            I'm a covid 19 bot, here to help you!
+        </template>
+    </category>
+
+    <category>
+        <pattern>Corona</pattern>
+        <template>
+            Coronavirus disease is an infectious disease caused by a newly discovered coronavirus. I'm here to help you if you need any assistance
         </template>
     </category>
     
